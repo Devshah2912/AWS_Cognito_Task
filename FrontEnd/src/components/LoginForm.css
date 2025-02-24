@@ -1,0 +1,115 @@
+/* Dark Theme Login Form */
+
+:root {
+  --primary-color: #1e1e2f;
+  --secondary-color: #2a2a40;
+  --accent-color: #5a67d8;
+  --text-color: #e0e0e0;
+  --input-bg: #33334d;
+  --input-border: #4a4a6a;
+  --hover-color: #7f85ff;
+  --error-color: #ff4d4d;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.login-form {
+  background: var(--secondary-color);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  max-width: 420px;
+}
+
+.login-form h2 {
+  color: var(--text-color);
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* Input Fields */
+.login-form input {
+  background: var(--input-bg);
+  border: 1px solid var(--input-border);
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin-bottom: 18px;
+  font-size: 15px;
+  color: var(--text-color);
+  transition: border-color 0.2s ease;
+}
+
+.login-form input:focus {
+  border-color: var(--hover-color);
+  outline: none;
+  box-shadow: 0 0 6px rgba(90, 103, 216, 0.5);
+}
+
+.login-form input::placeholder {
+  color: #999;
+}
+
+/* Labels */
+.trying {
+  color: var(--text-color);
+  font-size: 13px;
+  margin: 5px;
+}
+
+/* Submit Button */
+.submit_button {
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s;
+  margin-top: 10px;
+}
+
+.submit_button:hover {
+  background: var(--hover-color);
+  transform: scale(1.03);
+}
+
+.submit_button:active {
+  background: var(--hover-color);
+  transform: scale(0.98);
+}
+
+/* Link Styling */
+.login-form a {
+  color: var(--hover-color);
+  text-decoration: none;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-form a:hover {
+  text-decoration: underline;
+}

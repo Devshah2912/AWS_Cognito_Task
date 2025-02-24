@@ -1,0 +1,47 @@
+/* Dark Theme Welcome Page */
+
+.welcome-container {
+  background: var(--secondary-color);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  max-width: 420px;
+  text-align: center;
+  margin: auto;
+}
+
+.welcome-container h1 {
+  color: var(--text-color);
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Sign Out Button */
+.signout-button {
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s;
+  margin-top: 10px;
+}
+
+.signout-button:hover {
+  background: var(--hover-color);
+  transform: scale(1.03);
+}
+
+.signout-button:active {
+  background: var(--hover-color);
+  transform: scale(0.98);
+}
